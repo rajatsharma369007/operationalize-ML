@@ -97,7 +97,7 @@ The future scope of the project can be to:
 
 ## Brief Introductory Video
 
-[![alt-txt](backup/images/youtube_thumbnail.jpb)](https://www.youtube.com/watch?v=haBXfmGhPG8)
+[![alt-txt](backup/images/youtube_thumbnail.jpg)](https://www.youtube.com/watch?v=haBXfmGhPG8)
 
 ## Licencse
 Licensed under the MIT License @ Udacity
