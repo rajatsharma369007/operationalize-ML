@@ -7,14 +7,13 @@ In this project, I have used Azure to configure a cloud-based machine learning p
 ![alt-text](backup/images/flow_diagram.png)
 
 ## Main Steps:
-1. Authentication
-2. Automated ML Experiment
-3. Deploy the best model
-4. Enable logging
-5. Swagger Documentation
-6. Consume model endpoints
-7. Create and publish a pipeline
-8. Documentation
+1. Automated ML Experiment
+2. Deploy the best model
+3. Enable logging
+4. Swagger Documentation
+5. Consume model endpoints
+6. Create and publish a pipeline
+7. Documentation
 
 ## Architectural Diagram
 ![alt-text](backup/images/architecture_diagram.png)
@@ -98,3 +97,13 @@ The future scope of the project can be to:
 
 ## Brief Introductory Video
 
+[![alt-txt](backup/images/youtube_thumbnail.jpb)](https://www.youtube.com/watch?v=haBXfmGhPG8)
+
+## Licencse
+Licensed under the MIT License @ Udacity
+
+## Issues/Bugs
+Please open issues on github to report bugs or make feature requests
+
+## Contribution
+If you are interested in improving the code, please open an issue first to describe the task you are planning to do. For small fixes (a few lines of change) feel free to open pull requests directly.
