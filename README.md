@@ -70,5 +70,31 @@ Once we finish the test, it's time to consume the deployed model via Endpoints. 
 
 
 ## Step 6: Create, Publish and Consume a Pipeline
-In the repo, you will see a Jupyter Notebook which we used for creating, publishing and consume pipeline.
+In the repo, you will see a Jupyter Notebook which we used for creating, publishing and consuming pipeline. 
+
+#### Created Pipeline in Azure ML studio
+![alt-text](backup/images/image13.png)
+
+#### Pipeline Endpoint in Azure ML studio
+![alt-text](backup/images/image14.png)
+
+#### Bankmarketing dataset with the AutoML module
+![alt-text](backup/images/image15.png)
+
+#### REST Endpoint and status of Published Pipeline
+![alt-text](backup/images/image17.png)
+
+#### RunDetails Widget
+![alt-text](backup/images/image18.png)
+
+#### Scheduled Run in Azure ML studio
+![alt-text](backup/images/image19.png)
+
+
+## Future Scope
+The future scope of the project can be to:
+* create a docker image for deploying the whole pipeline
+* integrate a alert management system to get Emails for fault and error in the production.
+
+## Brief Introductory Video
 
