@@ -3,36 +3,58 @@ import json
 
 # URL for the web service, should be similar to:
 # 'http://8530a665-66f3-49c8-a953-b82a2d312917.eastus.azurecontainer.io/score'
-scoring_uri = "http://ac37bc98-7402-4d8f-97cc-1183bed4dea5.southcentralus.azurecontainer.io/score"
+scoring_uri = "http://e0d81847-3e7d-4113-8589-aaefd3d6cf94.southcentralus.azurecontainer.io/score"
 
 # If the service is authenticated, set the key or token
-key = "B5WPpkkOMGY0T3UydGPtsD9A5bwikgw1"
+key = "SDigvbuD6PazMxEjkTsr1S8F2yaJpxlF"
 
 # Two sets of data to score, so we get two results back
 data = {
     "data": [
-        {
-      "age": 24,
-      "job": "technician",
-      "marital": "single",
-      "education": "university.degree",
-      "default": "no",
-      "housing": "no",
-      "loan": "yes",
-      "contact": "cellular",
-      "month": "jul",
-      "day_of_week": "wed",
-      "duration": 109,
-      "campaign": 3,
-      "pdays": 999,
-      "previous": 0,
-      "poutcome": "nonexistent",
-      "emp.var.rate": 1.4,
-      "cons.price.idx": 93.918,
-      "cons.conf.idx": -42.7,
-      "euribor3m": 4.963,
-      "nr.employed": 5228.1
-    }
+       {
+            "age": 17,
+            "campaign": 1,
+            "cons.conf.idx": -46.2,
+            "cons.price.idx": 92.893,
+            "contact": "cellular",
+            "day_of_week": "mon",
+            "default": "no",
+            "duration": 971,
+            "education": "university.degree",
+            "emp.var.rate": -1.8,
+            "euribor3m": 1.299,
+            "housing": "yes",
+            "job": "blue-collar",
+            "loan": "yes",
+            "marital": "married",
+            "month": "may",
+            "nr.employed": 5099.1,
+            "pdays": 999,
+            "poutcome": "failure",
+            "previous": 1
+          },
+          {
+            "age": 87,
+            "campaign": 1,
+            "cons.conf.idx": -46.2,
+            "cons.price.idx": 92.893,
+            "contact": "cellular",
+            "day_of_week": "mon",
+            "default": "no",
+            "duration": 471,
+            "education": "university.degree",
+            "emp.var.rate": -1.8,
+            "euribor3m": 1.299,
+            "housing": "yes",
+            "job": "blue-collar",
+            "loan": "yes",
+            "marital": "married",
+            "month": "may",
+            "nr.employed": 5099.1,
+            "pdays": 999,
+            "poutcome": "failure",
+            "previous": 1
+          },
     ]
 }
 # Convert to JSON string
