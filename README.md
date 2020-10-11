@@ -23,7 +23,7 @@ In this project, I have used Azure to configure a cloud-based machine learning p
 The aim of this step is to create an experiment using Automated ML, configure a compute cluster, and use that cluster to run the experiment.
 
 #### Dataset
-![alt-text](backup/images/image1.png)
+![alt-text](backup/images/image1_1.png)
 
 #### Completion of experiment
 ![alt-text](backup/images/image2.png)
@@ -62,7 +62,7 @@ we are ready with the deployed model and enabled logs. Now it's time to test the
 Once we finish the test, it's time to consume the deployed model via Endpoints. In this step, we run a script, having scoring_uri and the key to match the key for our service and the URI that was generated after deployment. 
 
 #### Result after consuming endpoint
-![alt-text](backup/images/image11.png)
+![alt-text](backup/images/image11_1.png)
 
 #### Apache benchmark
 ![alt-text](backup/images/image12.png)
