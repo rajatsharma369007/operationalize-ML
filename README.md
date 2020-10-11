@@ -1,12 +1,21 @@
 # Operationalizing Machine Learning
 
-One of the most important things is that **"DevOps"** refers to the collection of principles that allow getting software into production, or in this case, trained models. MLOps (Machine Learning Operations) is about applying DevOps best-practices and principles to machine learning operations.
+One of the most important things is that **"DevOps"** refers to the collection of principles that allow getting software into production, or in this case, trained models. MLOps (Machine Learning Operations) is about applying DevOps best-practices and principles to machine learning operations. This helps us to deliver innovation faster. 
 
-In this project, I have used Azure to configure a cloud-based machine learning production model, deploy it, and consume it. This project demonstrates the procedure of creating, publishing, and consuming a pipeline.
+In this project, I have used Azure to operationalize Machine Learning by configuring a cloud-based machine learning production model, then deploying the model as a web service API to Azure Container Instance (ACI) which helps to consume endpoints via HTTP. This enables us to use the model remotely from anywhere. Once deployed, we have a REST endpoint API to consume the deployed model.
 
 ![alt-text](backup/images/flow_diagram.png)
 
-## Main Steps:
+This project also demonstrates the procedure of:
+- Creating a pipeline
+- Publishing a pipeline
+- Interacting with a pipeline via an REST endpoint
+
+![alt-text](backup/images/pipeline_automation.png)
+
+Pipelines are very useful and are a foundation of automation and operations in general. Being able to create a Pipeline allows for easier interaction with model deployments.
+
+## Key Steps of this project:
 1. Automated ML Experiment
 2. Deploy the best model
 3. Enable logging
@@ -20,7 +29,7 @@ In this project, I have used Azure to configure a cloud-based machine learning p
 
 ## Key Steps
 ## Step 1: Automated ML Experiment
-The aim of this step is to create an experiment using Automated ML, configure a compute cluster, and use that cluster to run the experiment.
+The aim of this step is to create an experiment using Automated ML, configure a compute cluster, and use that cluster to run the experiment. Automated Machine Learning picks an algorithm and hyperparameters for us and generates a model ready for deployment.
 
 #### Dataset
 ![alt-text](backup/images/image1_1.png)
@@ -32,12 +41,12 @@ The aim of this step is to create an experiment using Automated ML, configure a 
 ![alt-text](backup/images/image3.png)
 
 ## Step 2: Deploy the Model
-After the experiment run completes, deploying the Best Model will allow to interact with the HTTP API service and interact with the model by sending data over POST requests.
+After the experiment run completes, it's time to deploy the Best Model. Azure Machine Learning helps to deploy a model as a web service API on Azure Container Instances (ACI). 
 
 ![alt-text](backup/images/image4.png)
 
 ## Step 3: Enable Application Insights
-Once the Best Model is deployed, enable Application Insights and retrieve logs. Although this is configurable at deploy time with a check-box, it is useful to be able to run code that will enable it for us.
+Once the Best Model is deployed, lets enable Application Insights and retrieve logs. Application Insights is a performance management service for web applications that enables us to do all the monitoring of the service.
 
 #### Check for Application Insights
 ![alt-text](backup/images/image5.png)
@@ -51,7 +60,7 @@ Once the Best Model is deployed, enable Application Insights and retrieve logs. 
 
 
 ## Step 4: Swagger Documentation
-we are ready with the deployed model and enabled logs. Now it's time to test the REST APIs using Swagger. This provides a JSON file to test the get and post functionality of the Deployed API through which we will communicate with the model.
+we are ready with the deployed model and enabled logs. Now it's time to test the REST APIs using Swagger. Swagger is a tool that helps build, document, and consume RESTful web services.
 
 #### Swagger UI
 ![alt-text](backup/images/image8.png)
@@ -59,7 +68,7 @@ we are ready with the deployed model and enabled logs. Now it's time to test the
 ![alt-text](backup/images/image10.png)
 
 ## Step 5: Consume Model Endpoints
-Once we finish the test, it's time to consume the deployed model via Endpoints. In this step, we run a script, having scoring_uri and the key to match the key for our service and the URI that was generated after deployment. 
+Once we finish the test, it's time to consume the deployed model via REST API endpoints. Here we will make an authenticated HTTP request to a deployed model service in Azure Container Services to retrieve data. The APIs exposed by Azure ML then uses JSON to accept data and submit responses.
 
 #### Result after consuming endpoint
 ![alt-text](backup/images/image11_1.png)
@@ -107,3 +116,4 @@ Please open issues on github to report bugs or make feature requests
 
 ## Contribution
 If you are interested in improving the code, please open an issue first to describe the task you are planning to do. For small fixes (a few lines of change) feel free to open pull requests directly.
+
