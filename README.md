@@ -99,8 +99,8 @@ The future scope of the project can be to:
 
 [![alt-txt](backup/images/youtube_thumbnail.jpg)](https://www.youtube.com/watch?v=haBXfmGhPG8)
 
-## Licencse
-Licensed under the MIT License @ Udacity
+## License
+Licensed under the [MIT License](https://github.com/rajatsharma369007/Operationalize-ML/blob/master/LICENSE) @ Udacity
 
 ## Issues/Bugs
 Please open issues on github to report bugs or make feature requests
